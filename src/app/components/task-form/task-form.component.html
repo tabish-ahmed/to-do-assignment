@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Add New Task</h2>
+
+  <form [formGroup]="taskForm" (ngSubmit)="addTask()">
+    <input type="text" placeholder="Enter task description" formControlName="description">
+    
+    <div class="button-group">
+      <button type="submit" class="submit-btn" [disabled]="taskForm.invalid">Add Task</button>
+      <button type="button" class="cancel-btn" routerLink="/tasks">Cancel</button>
+    </div>
+  </form>
+</div>

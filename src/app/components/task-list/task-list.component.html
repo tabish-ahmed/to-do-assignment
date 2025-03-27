@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Task Manager</h2>
+  
+    <ul class="task-list">
+      <li *ngFor="let task of taskList$ | async" [class.completed]="task.completed">
+        <span>{{ task.description }}</span>
+        <button class="mark-btn" (click)="markDone(task.id)">
+          {{ task.completed ? 'Undo' : 'Mark Done' }}
+        </button>
+      </li>
+    </ul>
+  
+    <button class="add-btn" routerLink="/tasks/new">Add New Task</button>
+    <button class="clear-btn" (click)="clearAllTasks()">Clear All</button>
+  </div>
+  

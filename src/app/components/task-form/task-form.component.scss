@@ -1,0 +1,59 @@
+.container {
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  color: black;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn {
+  padding: 10px 15px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  background: gray;
+  color: black;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  padding: 10px 15px;
+  border: none;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  background: gray;
+  color: black;
+}
